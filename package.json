@@ -87,5 +87,8 @@
       "@commitlint/config-lerna-scopes",
       "@commitlint/config-conventional"
     ]
+  },
+  "dependencies": {
+    "wdio-image-comparison-service": "^1.13.6"
   }
 }
