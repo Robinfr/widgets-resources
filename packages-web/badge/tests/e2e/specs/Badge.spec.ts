@@ -8,6 +8,7 @@ describe("badge-web", () => {
     });
     describe("type: badge", () => {
         it("compares successfully with a screenshot baseline", () => {
+            browser.setWindowRect(0, 0, 1200, 900);
             browser.pause(3000);
             browser.saveScreen("badgeHomePage", {});
             expect(browser.checkScreen("badgeHomePage", {})).toEqual(0);
