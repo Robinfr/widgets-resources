@@ -52,8 +52,12 @@ exports.config = {
                 screenshotPath: basePath + "/tests/screenshot/",
                 savePerInstance: false,
                 autoSaveBaseline: true,
+                scaleImagesToSameSize: true,
+                ignoreAntialiasing: true,
+                ignoreAlpha: true,
                 blockOutStatusBar: true,
-                blockOutToolBar: true
+                blockOutToolBar: true,
+                hideScrollBars: true
             }
         ]
     ],
