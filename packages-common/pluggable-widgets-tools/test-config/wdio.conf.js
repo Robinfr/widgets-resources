@@ -28,7 +28,7 @@ exports.config = {
                 args: debug ? ["--no-sandbox"] : ["--no-sandbox", "--headless", "--disable-gpu", "--disable-extensions"]
             },
             "moz:firefoxOptions": {
-                args: debug ? [] : []
+                args: debug ? [] : ["-headless"]
             }
         }
     ],
@@ -53,8 +53,7 @@ exports.config = {
                 savePerInstance: false,
                 autoSaveBaseline: true,
                 blockOutStatusBar: true,
-                blockOutToolBar: true,
-                hideScrollBars: true
+                blockOutToolBar: true
             }
         ]
     ],
