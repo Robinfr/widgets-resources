@@ -46,14 +46,14 @@ jobs:
           script:
               - npm run test:scripts -- $SINCE_ARG
         - name: "Run end-to-end tests"
-          dist: trusty
+          dist: xenial
           addons:
               firefox: latest
           services:
               - docker
+              - xvfb
           env:
               - BROWSER=firefox
-              - MOZ_HEADLESS=1
           script:
               - set -e
               - npm run release -- $SINCE_ARG
