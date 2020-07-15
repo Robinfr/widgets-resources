@@ -10,8 +10,8 @@ describe("badge-web", () => {
         it("compares successfully with a screenshot baseline", () => {
             browser.setWindowRect(0, 0, 1200, 900);
             browser.pause(3000);
-            browser.saveScreen("badgeHomePage", {});
-            expect(browser.checkScreen("badgeHomePage", {})).toEqual(0);
+            browser.saveFullPageScreen("badgeHomePage", {});
+            expect(browser.checkFullPageScreen("badgeHomePage", {})).toEqual(0);
         });
         it("changes caption when attribute value is changed", () => {
             const newAttributeValue = "Test";
